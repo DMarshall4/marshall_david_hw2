@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hidden { display: none;}
+
+main {text-align: center;}
+
+.container {
+  width: 48%;
+  display: inline-block;
+}
+
+.container img{
+  display: block;
+  width: 100%;
+}
