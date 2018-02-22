@@ -3,14 +3,83 @@
 
 .hidden { display: none;}
 
-main {text-align: center;}
-
-.container {
-  width: 48%;
-  display: inline-block;
+h1{
+  font-size: 20px
 }
 
-.container img{
-  display: block;
-  width: 100%;
+
+.spin{transform: rotate(1turn); transition: 1s;}
+.move{transform: translate(200px, 0%);}
+.gray{color: #999}
+.dshadow{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+
+
+#container {
+  display: inline-block;
+
+}
+
+#container div {
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+#container div img{
+  width: 150%;
+}
+
+#back img:hover{
+  width: 160%;
+  transition: 0.5s;
+}
+
+
+#bwbadge img:hover{
+  width: 160%;
+  transition: 0.5s;
+}
+
+
+#checkBox img:hover{
+  width: 160%;
+  transition: 0.5s;
+}
+
+#danger img:hover{
+  width: 160%;
+  transition: 0.5s;
+}
+
+#magnify img:hover{
+  width: 160%;
+  transition: 0.5s;
+}
+
+#mark img:hover{
+  width: 160%;
+  transition: 0.5s;
+}
+
+#pause img:hover{
+  width: 160%;
+  transition: 0.5s;
+}
+
+#play img:hover{
+  width: 160%;
+  transition: 0.5s;
+}
+
+#star img:hover{
+  width: 160%;
+  transition: 0.5s;
+}
+
+#sun img:hover{
+  width: 160%;
+  transition: 0.5s;
 }
