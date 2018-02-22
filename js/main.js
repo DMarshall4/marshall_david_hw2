@@ -6,56 +6,58 @@
   console.log("SEAF Fired");
 
   //Vars
-  const badge = document.querySelector("#bwbadge") ;
-  const back = document.querySelector("#back")
-  const checkBox = document.querySelector("#checkBox")
-  const danger = document.querySelector("#danger")
-  const magnify = document.querySelector("#magnify")
-  const mark = document.querySelector("#mark")
-  const pause = document.querySelector("#pause")
-  const play = document.querySelector("#play")
-  const star = document.querySelector("#star")
-  const sun = document.querySelector("#sun")
+  let badge = document.querySelector("#bwbadge") ;
+  let back = document.querySelector("#back")
+  let checkBox = document.querySelector("#checkBox")
+  let danger = document.querySelector("#danger")
+  let magnify = document.querySelector("#magnify")
+  let mark = document.querySelector("#mark")
+  let pause = document.querySelector("#pause")
+  let play = document.querySelector("#play")
+  let star = document.querySelector("#star")
+  let sun = document.querySelector("#sun")
   //Css Animations
-  function grow() {
-
-  }
 
   //Descriptions
   function badgeDes() {
     console.log("A badge");
-    badge.classList.add('spin');
+    this.classList.toggle('spin');
   }
   function backDes() {
     console.log("used to go back");
-    back.classList.add("move")
+    this.classList.toggle("move");
   }
   function checkDes() {
     console.log("Checkbox Garyed out when unchecked");
-    checkBox.classList.remove('gray')
+    this.classList.toggle('grayout');
   }
   function dangerDes() {
     console.log("Danger warning");
-    danger.classList.add('spin')
+    this.classList.toggle('grow');
   }
   function magDes() {
     console.log("magnify's selection");
-    magnify.classList.add('dshadow');
+    this.classList.toggle('dshadow');
   }
   function pauseDes() {
     console.log("Pause Animation");
+    this.classList.toggle("invert");
   }
   function playDes() {
     console.log("Play Aniamtion");
+    this.classList.toggle("invert");
   }
   function markDes() {
     console.log("Custom mark as important");
+    this.classList.toggle("invert");
   }
   function starDes() {
     console.log("Favorite Changes Colour when clicked");
+    this.classList.toggle("grayout");
   }
   function SunDes() {
     console.log("Toggle background Colour to dark/bright");
+    this.classList.toggle("grayout");
   }
 
   //EventLiseners
